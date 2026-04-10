@@ -191,7 +191,7 @@ fun SettingsGroupDebug() {
             subtitle = {
                 Text(
                     text = if (selectedWineChannels.isNotEmpty() && selectedWineChannels.any { it.isNotBlank() })
-                        selectedWineChannels.filter { it.isNotBlank() }.joinToString(",")
+                        selectedWineChannels.filter { it.isNotBlank() }.joinToString(", ")
                     else
                         stringResource(R.string.settings_debug_no_channels_selected)
                 )

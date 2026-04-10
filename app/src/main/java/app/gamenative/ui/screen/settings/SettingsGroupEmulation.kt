@@ -105,31 +105,26 @@ fun SettingsGroupEmulation() {
         SettingsMenuLink(
             colors = settingsTileColors(),
             title = { Text(text = stringResource(R.string.settings_emulation_box64_presets_title)) },
-            subtitle = { Text(stringResource(R.string.settings_emulation_box64_presets_subtitle)) },
             onClick = { showBox64PresetsDialog = true },
         )
         SettingsMenuLink(
             colors = settingsTileColors(),
             title = { Text(text = stringResource(R.string.fexcore_presets)) },
-            subtitle = { Text(text = stringResource(R.string.fexcore_presets_description)) },
             onClick = { showFexcorePresetsDialog = true },
         )
         SettingsMenuLink(
             colors = settingsTileColors(),
             title = { Text(text = stringResource(R.string.settings_emulation_driver_manager_title)) },
-            subtitle = { Text(text = stringResource(R.string.settings_emulation_driver_manager_subtitle)) },
             onClick = { showDriverManager = true },
         )
         SettingsMenuLink(
             colors = settingsTileColors(),
             title = { Text(text = stringResource(R.string.settings_emulation_contents_manager_title)) },
-            subtitle = { Text(text = stringResource(R.string.settings_emulation_contents_manager_subtitle)) },
             onClick = { showContentsManager = true },
         )
         SettingsMenuLink(
             colors = settingsTileColors(),
             title = { Text(text = stringResource(R.string.settings_emulation_wine_proton_manager_title)) },
-            subtitle = { Text(text = stringResource(R.string.settings_emulation_wine_proton_manager_subtitle)) },
             onClick = { showWineProtonManager = true },
         )
     }

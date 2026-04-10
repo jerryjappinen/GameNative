@@ -229,7 +229,6 @@ fun SettingsGroupInterface(
         SettingsSwitch(
             colors = settingsTileColorsAlt(),
             title = { Text(text = stringResource(R.string.settings_interface_external_links_title)) },
-            subtitle = { Text(text = stringResource(R.string.settings_interface_external_links_subtitle)) },
             state = openWebLinks,
             onCheckedChange = {
                 openWebLinks = it
@@ -383,6 +382,16 @@ fun SettingsGroupInterface(
             }
         }
 
+        // Steam download server selection
+        SettingsMenuLink(
+            colors = settingsTileColorsAlt(),
+            title = { Text(text = stringResource(R.string.settings_interface_download_server_title)) },
+            subtitle = {
+                Text(text = steamRegionsList.getOrNull(selectedRegionIndex)?.second ?: stringResource(R.string.settings_region_default))
+            },
+            onClick = { openRegionDialog = true },
+        )
+
         val ctx = LocalContext.current
         val sm = ctx.getSystemService(StorageManager::class.java)
 
@@ -439,15 +448,6 @@ fun SettingsGroupInterface(
                 colors = settingsTileColorsAlt(),
             )
         }
-        // Steam download server selection
-        SettingsMenuLink(
-            colors = settingsTileColorsAlt(),
-            title = { Text(text = stringResource(R.string.settings_interface_download_server_title)) },
-            subtitle = {
-                Text(text = steamRegionsList.getOrNull(selectedRegionIndex)?.second ?: stringResource(R.string.settings_region_default))
-            },
-            onClick = { openRegionDialog = true },
-        )
     }
 
     // Steam Download Server choice dialog
@@ -653,4 +653,3 @@ private fun Preview_SettingsScreen() {
         )
     }
 }
-
