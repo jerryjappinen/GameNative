@@ -190,11 +190,6 @@ private fun SettingsHeader(
                 ),
                 color = MaterialTheme.colorScheme.onSurface,
             )
-            Text(
-                text = stringResource(R.string.settings_subtitle),
-                style = MaterialTheme.typography.bodySmall,
-                color = PluviaTheme.colors.textMuted,
-            )
         }
 
         Spacer(modifier = Modifier.weight(1f))

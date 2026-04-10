@@ -855,13 +855,9 @@
     <string name="settings_info_send_tip_title">Send tip</string>
     <string name="settings_info_send_tip_subtitle">Contribute to ongoing development</string>
     <string name="settings_info_ask_tip_title">Ask for tip on startup</string>
-    <string name="settings_info_ask_tip_subtitle">Stops the tip message from appearing</string>
     <string name="settings_info_source_title">Source code</string>
-    <string name="settings_info_source_subtitle">View the source code of this project</string>
     <string name="settings_info_libraries_title">Libraries Used</string>
-    <string name="settings_info_libraries_subtitle">See what technologies make GameNative possible</string>
     <string name="settings_info_privacy_title">Privacy Policy</string>
-    <string name="settings_info_privacy_subtitle">Opens a link to GameNative\'s privacy policy</string>
 
     <!-- Settings: Interface Group -->
     <string name="settings_interface_title">Interface</string>
@@ -1242,7 +1238,6 @@
 
     <!-- Settings Screen -->
     <string name="settings_title">Settings</string>
-    <string name="settings_subtitle">Customize your experience</string>
 
     <!-- Contents Install Finish -->
     <string name="contents_install_success">Content installed successfully</string>

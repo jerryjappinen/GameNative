@@ -49,7 +49,6 @@ fun SettingsGroupInfo() {
             colors = settingsTileColorsAlt(),
             state = askForTip,
             title = { Text(stringResource(R.string.settings_info_ask_tip_title)) },
-            subtitle = { Text(text = stringResource(R.string.settings_info_ask_tip_subtitle)) },
             onCheckedChange = {
                 askForTip = it
                 PrefManager.tipped = !askForTip
@@ -59,21 +58,18 @@ fun SettingsGroupInfo() {
         SettingsMenuLink(
             colors = settingsTileColors(),
             title = { Text(text = stringResource(R.string.settings_info_source_title)) },
-            subtitle = { Text(text = stringResource(R.string.settings_info_source_subtitle)) },
             onClick = { uriHandler.openUri(Constants.Misc.GITHUB_LINK) },
         )
 
         SettingsMenuLink(
             colors = settingsTileColors(),
             title = { Text(text = stringResource(R.string.settings_info_libraries_title)) },
-            subtitle = { Text(text = stringResource(R.string.settings_info_libraries_subtitle)) },
             onClick = { showLibrariesDialog = true },
         )
 
         SettingsMenuLink(
             colors = settingsTileColors(),
             title = { Text(text = stringResource(R.string.settings_info_privacy_title)) },
-            subtitle = { Text(text = stringResource(R.string.settings_info_privacy_subtitle)) },
             onClick = {
                 uriHandler.openUri(Constants.Misc.PRIVACY_LINK)
             },
