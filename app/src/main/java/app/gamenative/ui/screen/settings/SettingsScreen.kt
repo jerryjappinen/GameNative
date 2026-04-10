@@ -31,7 +31,6 @@ import androidx.compose.material.icons.filled.BugReport
 import androidx.compose.material.icons.filled.Gamepad
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Palette
-import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -189,31 +188,6 @@ private fun SettingsHeader(
                     letterSpacing = 0.5.sp,
                 ),
                 color = MaterialTheme.colorScheme.onSurface,
-            )
-        }
-
-        Spacer(modifier = Modifier.weight(1f))
-
-        // Settings icon decoration
-        Box(
-            modifier = Modifier
-                .size(48.dp)
-                .clip(CircleShape)
-                .background(
-                    Brush.radialGradient(
-                        colors = listOf(
-                            PluviaTheme.colors.accentCyan.copy(alpha = 0.2f),
-                            Color.Transparent,
-                        ),
-                    ),
-                ),
-            contentAlignment = Alignment.Center,
-        ) {
-            Icon(
-                imageVector = Icons.Default.Settings,
-                contentDescription = null,
-                tint = PluviaTheme.colors.accentCyan.copy(alpha = 0.6f),
-                modifier = Modifier.size(24.dp),
             )
         }
     }
